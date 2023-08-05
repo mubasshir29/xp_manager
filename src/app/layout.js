@@ -1,3 +1,4 @@
+import Sidebar from './_components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-indigo-50 w-full flex justify-center `}>
+        <div className='relative w-[1520px] max-w-[1520px] flex gap-4'>
+          <div className='w-[380px]'>
+            <Sidebar/>
+          </div>
+          <div className='w-full flex justify-center items-start'>
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
