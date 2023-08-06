@@ -17,7 +17,7 @@ const LastTransactions = () => {
                        </div>
                     </div>
                     
-                    <div className='w-[70%] flex flex-col text-slate-700'>
+                    <div className='w-[70%] flex flex-col text-slate-500'>
                         <h2 className='text-lg font-bold'>{transaction.label}</h2>
                         <h3 className='text-slate-400'>{transaction.category}</h3>
                     </div>

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} bg-indigo-50 w-full flex justify-center `}>
         <div className='relative w-[1520px] max-w-[1520px] flex gap-4'>
-          <div className='w-[380px]'>
+          <div className='w-[420px]'>
             <Sidebar/>
           </div>
           <div className='w-full flex justify-center items-start'>
