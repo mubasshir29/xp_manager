@@ -1,0 +1,19 @@
+[
+    {
+        "type":"Cash",
+        "walletName":"Cash",
+        "balanceAmount":"5200"
+    },
+    {
+        "type":"Debit Card",
+        "walletName":"FAB Debit",
+        "balanceAmount":"700",
+        "cardLastDigits":"5069"
+    },
+    {
+        "type":"Credit Card",
+        "walletName":"ENBD Credit",
+        "balanceAmount":"500",
+        "cardLastDigits":"5069"
+    }
+]
