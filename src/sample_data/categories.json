@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Travel",
+        "icon":"https://firebasestorage.googleapis.com/v0/b/xp-manager-5b1e4.appspot.com/o/airplane_31069.png?alt=media&token=8f96529d-007a-4c87-9cf6-a83935a5150b"
+    },
+    {
+        "name":"Dinner",
+        "icon":"https://firebasestorage.googleapis.com/v0/b/xp-manager-5b1e4.appspot.com/o/pieces-cutlery_1328.png?alt=media&token=befbfb98-9ff7-46b3-99f5-692f29c91fcb"
+    },
+    {
+        "name":"Shopping",
+        "icon":"https://firebasestorage.googleapis.com/v0/b/xp-manager-5b1e4.appspot.com/o/shopping-cart_1170678.png?alt=media&token=81602db6-cf68-4132-a21f-1204b6440efb"
+    },
+    {
+        "name":"Mobile Recharge",
+        "icon":"https://firebasestorage.googleapis.com/v0/b/xp-manager-5b1e4.appspot.com/o/smartphone_3315229.png?alt=media&token=136c7f80-762c-4980-82da-c0a26f00a372"
+    },
+    {
+        "name":"Grocery",
+        "icon":"https://firebasestorage.googleapis.com/v0/b/xp-manager-5b1e4.appspot.com/o/shopping-bag_2591228.png?alt=media&token=46625a97-8073-42af-abf7-5ebae830566e"
+    }
+]

@@ -19,11 +19,11 @@ const Sidebar = () => {
             <li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><MdInsertDriveFile/></span>Invoices</li>
             <Link href='\wallets'><li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><MdWallet/></span>Wallets</li></Link>
             <li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><BsFillBarChartFill/></span>Reports</li>
-            <li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><BsFillDatabaseFill/></span>Transactions</li>
+            <Link href='\all-transactions'><li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><BsFillDatabaseFill/></span>Transactions</li></Link>
             <li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><MdArchive/></span>Archives</li>
         </ul>
         <ul className='flex flex-col gap-4 py-4 border-t-2 border-slate-100 px-3'>
-            <li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><BsFillGearFill/></span>Settings</li>
+        <Link href='\settings'><li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><BsFillGearFill/></span>Settings</li></Link>
             <li className='pl-8 flex gap-2 p-2 justify-start text-slate-400 rounded-lg font-bold hover:bg-indigo-200 hover:text-indigo-500 hover:font-bold'><span className='text-2xl'><MdOutlineHelp/></span>Help</li>
         </ul>
         
