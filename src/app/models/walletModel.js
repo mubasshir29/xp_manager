@@ -10,6 +10,6 @@ const walletSchema = new mongoose.Schema({
 
 })
 
-const categoryModel = mongoose.models.categories || mongoose.model("categories",categorySchema)
+const walletModel = mongoose.models.wallets || mongoose.model("wallets",walletSchema)
 
-export default categoryModel
+export default walletModel
