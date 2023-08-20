@@ -1,12 +1,19 @@
+import Image from 'next/image'
 import React from 'react'
 
 const WalletCard = ({wallet}) => {
   return (
-    <div className='w-[384px] bg-gradient-to-tr from-indigo-700 via-indigo-500 to-indigo-900 rounded-xl p-8 flex flex-col gap-2'>
-       <h3 className='text-white text-base'>{wallet.type}</h3>
-       <h4 className='text-white font-bold text-xl'>{wallet.walletName}</h4>
-       {wallet.cardLastDigits && <p className='text-white text-sm'>xxxx xxxx xxxx {wallet.cardLastDigits}</p>}
-       <h2 className='text-2x text-yellow-200 font-bold'>Balance: {wallet.balanceAmount}</h2>
+    <div className='relative w-[350px] h-[200px] shadow-md bg-gradient-to-tr from-indigo-400 to-indigo-800 rounded-xl p-8 flex justify-between'>
+      <div className='flex flex-col gap-2 justify-center'>
+        <h4 className='text-slate-200 font-bold text-lg'>{wallet.name}</h4>
+        <h3 className='text-slate-200 text-base'>{wallet.type}</h3>
+        { wallet.cardLastDigits && <p className='text-slate-200 text-sm'>xxxx xxxx xxxx {wallet.cardLastDigits}</p>}
+        <h2 className='text-2xl text-slate-100 font-bold'>{wallet.currency} {wallet.balance}</h2>
+      </div>
+       
+      <div className='flex justify-center items-center'>
+        <Image src={wallet.imageUrl} width={100} height={100}/>
+      </div>
     </div>
   )
 }

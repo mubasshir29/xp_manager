@@ -15,6 +15,16 @@ export async function GET(){
 
 export async function POST(request){
     const reqBody = await request.json()
-
-    return NextResponse.json({msg:"Something"},{status:200})
+    console.log(reqBody)
+    try{
+        const newCategory = new Categories(reqBody)
+        const addedCategory = await newCategory.save()
+        if(addedCategory){
+            return NextResponse.json(addedCategory, {msg:"Category Added successfully"},{status: 200})
+        }
+        else return NextResponse.json({msg:"Error in adding category"},{status:402})
+    }
+    catch(error){
+        console.log(error)
+    }
 }

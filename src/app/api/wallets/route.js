@@ -21,7 +21,7 @@ export async function POST(request){
         const newWallet = new Wallet(reqBody)
         const addedWallet = await newWallet.save()
         if(addedWallet){
-            console.log(response)
+            console.log(addedWallet)
             return NextResponse.json(addedWallet, {status:200}, {msg:"Wallet Added Successfully"})
         }
         else return NextResponse.json({msg:"There is an error"},{status:402})

@@ -14,13 +14,14 @@ const AddWallet = () => {
     const [wallet,setWallet] = useState({
         type:"",
         name:"",
+        cardLastDigits:"",
         initialAmount:"",
         color:"",
         currency:"",
         imageUrl:"",
     })
     const onFormChange = (e) => {
-        setWallet((prev)=>({...prev, [e.target.name]:e.target.value}))
+         setWallet((prev)=>({...prev, [e.target.name]:e.target.value}))
         //console.log(wallet)
     }
      
@@ -79,7 +80,7 @@ const AddWallet = () => {
             const response = addWallet(wallet)
             if(response){
                 window.alert("Successfully added")
-                router.push("/wallets")
+                router.back()
             }
         }
         
@@ -103,6 +104,11 @@ const AddWallet = () => {
                 <label>Name</label>
                 <input name='name' onChange={(e)=>onFormChange(e)} className='px-4 py-2 border border-slate-300 rounded-lg' type='text' placeholder='Ex: Monthly Budget'></input>
             </div>
+
+            {(wallet.type === 'Credit-Card' || wallet.type === 'Debit-Card') && (<div className='flex flex-col gap-2'>
+                <label>Last 4 digits</label>
+                <input name='cardLastDigits' onChange={(e)=>onFormChange(e)} className='px-4 py-2 border border-slate-300 rounded-lg' type='text' placeholder='Ex: 1234'></input>
+            </div>) }
 
             <div className='flex flex-col gap-2'>
                 <label>Initial Amount</label>
