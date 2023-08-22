@@ -12,8 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-indigo-50 w-full flex justify-center `}>
-        <div className='relative w-[1520px] max-w-[1520px] flex gap-4'>
+      <body className={`${inter.className} bg-indigo-50 w-full flex justify-center overflow-x-hidden `}>
+        <div className='relative w-[1520px] max-w-[1520px] flex gap-4 '>
           <div className='w-[420px]'>
             <Sidebar/>
           </div>

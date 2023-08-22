@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import TotalBalance from './_components/TotalBigCards'
+import TotalBalance from './_components/TotalBalance'
 import Report from './_components/SpendingThisMonth'
 import TotlaSmallCards from './_components/TotalSmallCards'
 import LastTransactions from './_components/LastTransactions'

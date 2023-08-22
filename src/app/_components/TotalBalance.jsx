@@ -8,7 +8,7 @@ const TotalBalance = () => {
           <div className='flex flex-col gap-6 w-[50%]'>
             <h2 className='font-bold text-2xl'>Total Ballance</h2>
             <div>
-              <p className='text-emerald-400 font-bold text-xl'>+ $28</p>
+              <p className='text-emerald-400 font-bold text-xl'>+ AED 28</p>
               <p>Last transaction</p>
             </div>
             <div className='flex gap-1'>
@@ -18,7 +18,7 @@ const TotalBalance = () => {
           </div>
           <div className='z-10 w-[50%] flex justify-end'>
             <div className='flex flex-col items-end pr-6'>
-              <h1 className='text-white text-3xl font-bold'>$200</h1>
+              <h1 className='text-white text-3xl font-bold'>AED 200</h1>
               <p className='text-white text-sm font-bold'>WALLET AMOUNT</p>
             </div>
           </div>
