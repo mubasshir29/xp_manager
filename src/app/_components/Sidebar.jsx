@@ -1,5 +1,7 @@
 "use client"
 import React from 'react'
+import { signOut } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation'
 import { MdSpaceDashboard, MdInsertDriveFile, MdWallet,MdArchive,MdOutlineHelp } from "react-icons/md";
 import { BsFillBarChartFill, BsFillDatabaseFill,BsFillGearFill } from "react-icons/bs";
@@ -8,6 +10,7 @@ import Link from 'next/link';
 
 
 const Sidebar = () => {
+  const {data:session,status} = useSession()
   const router = useRouter()
   return (
     <div className='w-full h-screen p-4'>
@@ -33,8 +36,8 @@ const Sidebar = () => {
         <div className='absolute group bottom-0 left-0 w-full bg-slate-100 hover:bg-indigo-100 p-4 flex gap-4 rounded-b-lg'>
           <div className='w-[50px] h-[50px] rounded-full bg-white'></div>
           <div>
-            <h4 className='font-bold text-indigo-500'>Mubasshir Farooqui</h4>
-            <p className='text-indigo-400'>Profile</p>
+            <h4 className='font-bold text-indigo-500'>{session?.user?.name}</h4>
+            <button onClick={signOut} className='text-indigo-400 hover:text-indigo-600'>Logout</button>
           </div>
         </div>
     </div>

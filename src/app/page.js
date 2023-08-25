@@ -4,8 +4,13 @@ import Report from './_components/SpendingThisMonth'
 import TotlaSmallCards from './_components/TotalSmallCards'
 import LastTransactions from './_components/LastTransactions'
 import SpendingThisMonth from './_components/Report'
+import { getServerSession } from 'next-auth/next'
+import { authOptions } from './api/auth/[...nextauth]/route'
 
-export default function Home() {
+export default async function Home() {
+  const data = await getServerSession(authOptions)
+  const user = JSON.stringify(data)
+  console.log(user)
   return (
     <div className='flex flex-wrap'>
 

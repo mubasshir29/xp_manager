@@ -1,3 +1,4 @@
+import AuthProiver from './Proviers'
 import Sidebar from './_components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-indigo-50 w-full flex justify-center overflow-x-hidden `}>
-        <div className='relative w-[1520px] max-w-[1520px] flex gap-4 '>
+        <AuthProiver><div className='relative w-[1520px] max-w-[1520px] flex gap-4 '>
           <div className='w-[420px]'>
             <Sidebar/>
           </div>
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
             {children}
           </div>
         </div>
+        </AuthProiver>
       </body>
     </html>
   )
