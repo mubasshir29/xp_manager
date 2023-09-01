@@ -14,6 +14,20 @@ const userSchema = mongoose.Schema({
         type: String,
         required : [true, "Please provide a password"],
     },
+    wallets: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Wallet'
+    }],
+   transactions : [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref:"Transaction"
+   }],
+   categories: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Category'
+    }],
+    
+
 },
 {timestamps: true});
 
